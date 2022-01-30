@@ -6,6 +6,11 @@
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
+/* * Asterisk */
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 body {
@@ -16,16 +21,69 @@ body {
     /*width: 100vw;*/ /*Viewport width*/
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+figure {
+    margin: 0;
+}
+
 .posts {
     background-color: hsl(210, 46%, 95%);
     height: 100%;
+    position: relative;
 }
 .post {
     background-color: white;
-    width: 800px;
+    width: 920px;
     margin: 0 auto;
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    max-height: 262px;
+}
+
+.post-image-wrapper {
+    /* width: 400px; */
 }
 .post-image {
-    width: 100px;
+    /* width: 100px; */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.post-content {
+    padding: 20px 25px
+}
+
+.post-heading {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.post-text {
+    margin-bottom: 10px;
+}
+
+.author-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-image {
+    width: 60px;
+    border-radius: 100%;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+.author {
+    padding-right: 15px;
+    padding-left: 15px;
 }
